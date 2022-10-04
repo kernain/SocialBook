@@ -1,0 +1,255 @@
+body {
+  /* height: 100vh; */
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #18191a;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+
+}
+section {
+  width: 100%;
+  position: relative;
+  top: 12em;
+  left: -1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+::placeholder { 
+    color: #959ca7;
+    /* opacity: 1; */
+  }
+
+.main-logo-name {
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 2em; */
+  color: white;
+  /* width: 30%; */
+  /* position: relative;
+    top: 1.5em;
+    right: -8em; */
+}
+.main-logo-name p {
+  padding: 0px;
+  margin: 0px 0px 0px 30px;
+}
+
+.main-logo-name h2 {
+  padding: 0px;
+  margin: 0px 0px 20px 30px;
+}
+
+.login-box  {
+    position: relative;
+    top: 4em;
+}
+
+.page-dsc{
+    color: white;
+    position: relative;
+    /* top: 4em; */
+    right: -12.5em;
+    font-size: 1em;
+}
+
+.forgot-pw{
+    text-decoration: none;
+    color: #3082f6;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  background-color: #232626;
+  /* height: auto; */
+  padding: 2em;
+  /* padding-top: 1.5em;
+  padding-left: 1.5em; */
+  margin-left: 10em;
+  border-radius: 20px;
+}
+form{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.input{
+    width: 96%;
+    margin-bottom: 20px;
+    height: 45px;
+    outline: none;
+    font-size: 15px;
+    padding-left: 15px;
+    border: 1px solid rgb(188, 187, 187);
+    border-radius: 5px;
+    max-width: 100%;
+    background-color: #333333;
+    color: white;
+}
+.input:focus{
+    outline: solid #333333 1px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.btn{
+    background-color: #2563eb;
+    border: 0px;
+    color: white;
+    width: 100%;
+}
+.createAccount{
+    padding: 15px;
+    text-align: center;
+    margin-top: -15px;
+}
+.btn2{
+    width: 65%;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 45px;
+    font-weight: 500;
+    background-color: #059669;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding: 5% 0 0 10%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(41, 40, 40, 0.488); 
+}
+h3{
+  margin: 0px;
+  padding: 0px;
+}
+.modal_card{
+  padding: 100px;
+  text-align: start;
+  background-color: #232626;
+  border-radius: 10px;
+  box-shadow: -5px 20px 82px -16px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup_inputs{
+  display: flex;
+  justify-content: space-between;
+  /* margin: 10px; */
+
+}
+.signup_inputs input{
+  width: 45%;
+}
+p{
+  text-align: start;
+}
+@media screen and (max-width: 1024px) {
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+  section {
+    position: relative;
+    top: 0em;
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .login {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 1em;
+  }
+  .input{
+    max-width: 100%;
+
+  }
+  .card{
+    margin: 50px 0px;
+    margin-left: 30px;
+    height: 100%;
+    width: 25em;
+  }
+  .main-logo-name p{
+    text-align: center;
+  }
+  .modal-content{
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .login {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-logo-name p {
+    margin: 1px;
+  }
+  .card{
+    width: 70%;
+  }
+  .main-logo-name p{
+    font-size: 17px;
+    text-align: center;
+  }
+  .btn2{
+    width: 70%;
+  }
+  .modal-content{
+    height: 100vh;
+  }
+}

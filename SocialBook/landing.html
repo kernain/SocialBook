@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>SocialBook - login or signup</title>
+</head>
+
+<body>
+    <section>
+        <div class="login main-logo-name">
+            <h2>SocialBook</h2>
+            <p>Connect with friends and the world <br> around you on SocialBook.</p>
+        </div>
+        <div class="login login-box">
+            <div class="card">
+                <form onsubmit="return login()">
+                    <input class="input" id="user_email" type="text" placeholder="Email address or phone number">
+                    <div style="margin-bottom: 20px; text-align: start" >
+                        <input style="margin-bottom: 10px" class="input" id="user_password" type="password" placeholder="Password">
+                    </div>
+                    <input class="input btn" type="submit" value="Log In">
+                    <a class="forgot-pw" href="#">Forgot password?</a>
+                </form>
+                <div class="createAccount">
+                    <button class="btn2" id="myBtn">Create New Account</button>
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal_card">
+                                <span class="close">&times;</span>
+                                <h3>Sign Up</h3>
+                                <p>It's quick and easy</p>
+                                <form onsubmit="return signup()">
+                                    <div class="signup_inputs">
+                                        <input class="input" id="firstname" type="text" placeholder="First Name" required>
+                                        <input class="input" id="lastname" type="text" placeholder="Last Name" required>
+                                    </div>
+                                    <input class="input" id="email" type="email" placeholder="Email" required>
+                                    <div style="margin-bottom: 20px; text-align: start" >
+                                        <input style="margin-bottom: 10px" class="input" id="password" type="password" placeholder="Password">
+                                    </div>
+                                    <p>Your password must be at least 8 characters including a number.</p>
+                                    <input type="submit" class="btn2" value="Sign Up">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/landing.js"></script>
+</html>

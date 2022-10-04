@@ -1,0 +1,18 @@
+#show-friends{
+    background: var(--color-light);
+    color: var(--color-primary);
+}
+.friends-menu {
+    background: none;
+}
+.friends-menu h3{
+color: white;
+}
+
+#showFriends{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}

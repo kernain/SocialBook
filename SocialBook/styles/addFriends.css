@@ -1,0 +1,49 @@
+.friends-menu{
+    background: var(--color-light);
+    color: var(--color-primary);
+}
+.left .sidebar .active {
+    background: none;
+}
+.left .sidebar .active h3{
+color: white;
+}
+
+.card{
+    margin: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    color: white;
+    font-size: 0.9rem;
+    min-width: 20vh;
+
+}
+
+#addFriends{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.noFriends{
+    margin: 0 auto;
+    width: 30%;
+    font-size: 1.4rem;
+    margin-top: 1em;
+}
+
+.friend-name{
+    margin: 0.3em 0 0.3em 0;
+}
+
+@media screen and (max-width: 768px){
+    #addFriends{
+        flex-direction: column;
+        align-items: center;
+    }
+}
